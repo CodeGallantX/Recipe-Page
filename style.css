@@ -1,0 +1,94 @@
+/* Add your styles here */
+:root {
+  --background-color : #e8eef2;
+  --card-bg-color: #e3d8f1;
+  --text-color: #081D4C;
+  --link-color: #952903;
+  --light-brown: #f79d5c;
+}
+
+h1, h2 {
+  font-family: Roboto Slab;
+}
+
+body {
+  font-family: Poppins;
+  line-height: 1.8;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+.stew-image {
+  border-radius: 20px;
+  max-width: 80%;
+  transition: all 4s ease-out;
+  cursor: pointer;
+}
+
+.stew-image:hover {
+  transform: rotateY(360deg);
+}
+
+.card {
+  background-color: var(--card-bg-color);
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  justify-items: center;
+}
+
+.card p {
+  text-align: center;
+  margin: 20px;
+}
+
+.card a {
+  color: var(--link-color);
+}
+
+strong {
+  margin-left: 1em;
+}
+
+h2 + ul li {
+  list-style-image: url('icons8-chicken-20.png');
+  
+}
+
+p + ul li a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+p + ul li a:hover {
+  color: var(--light-brown);
+  text-decoration: underline;
+}
+
+h2  {
+  margin-left: 1em;
+}
+
+ul, ol {
+  list-style-position: inside;
+}
+
+.preparation {
+  background-color: var(--light-brown);
+  padding: 1em 2em 1em 0.5em;
+  border-radius: 10px;
+  transition: all 0.4s ease-out;
+}
+
+.preparation h2 {
+  color: var(--text-color);
+  text-align: left;
+}
+
+.preparation:hover.preparation h2 {
+  text-align: center;
+}
+
+.preparation li {
+  margin-bottom: 7px;
+}
